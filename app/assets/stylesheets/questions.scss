@@ -42,10 +42,24 @@ a {
   align-items: center;
 }
 
-
 .banner-question{
+  p{
+    font-size: var(--text);
+  }
+  type-input{
 
+  }
+  type{
+    width:60%;
+  }
+  a {
+  color: grey;
+  &:hover {
+    color: black;
+  }
+ }
 }
+
 .banner {
   padding: 5px;
   background:$gray;
@@ -55,6 +69,9 @@ a {
   }
   p{
   font-size: var(--text);
+  }
+  button{
+    color:blue;
   }
 }
 
@@ -66,12 +83,7 @@ a {
     font-size: var(--header2);
   }
   p{
-  font-size: var(--text);
+    font-size: var(--text);
   }
 }
-a {
-  color: grey;
-  &:hover {
-    color: black;
-  }
-}
+
