@@ -27,9 +27,11 @@ html {
   --gray-text: #525252;
   scroll-behavior: smooth;
 }
-h1 {
+
+h1{
   font-size: var(--header1);
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -46,11 +48,14 @@ a {
 
 .firstpg{
  max-height: 100vh;
+ h1 {
+  text-content: center;
 }
 .banner-question {
   padding: 4rem;
   margin: -4rem;
   text-align: center;
+  }
   p{
     font-size: var(--text);
   }
@@ -60,15 +65,17 @@ a {
     width: 150%;
     height: 22px;
   }
-   button {
-  padding: 17px;
-  border: none;
-  color: white;
-  background: blue;
-  cursor: pointer;
-  position: absolute;
-  right:156px;
-  top:260px;
+  input button{
+  }
+  button {
+    padding: 17px;
+    border: none;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    position: absolute;
+    right:-143px;
+    top:-1px;
   }
   button:hover {
     background: #27394e;
@@ -76,7 +83,11 @@ a {
   }
 }
 
-
+  form{
+    position: absolute;
+    right:350px;
+    top:260px;
+  }
   /* second page - answer*/
 
 .banner {
