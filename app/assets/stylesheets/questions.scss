@@ -23,7 +23,7 @@ html {
   --text: calc(0.9rem + 1vw);
   --big: calc(6rem + 1vw);
   --special-color: #906272;
-  --background-color: #414141;
+  --background-color: #cd853f;
   --gray-text: #525252;
   scroll-behavior: smooth;
 }
@@ -42,23 +42,42 @@ a {
   align-items: center;
 }
 
-.banner-question{
+/* First page - Question */
+
+.firstpg{
+ max-height: 100vh;
+}
+.banner-question {
+  padding: 4rem;
+  margin: -4rem;
+  text-align: center;
   p{
     font-size: var(--text);
   }
-  type-input{
-
+  input{
+    padding: 11px;
+    margin: -2px;
+    width: 150%;
+    height: 22px;
   }
-  type{
-    width:60%;
+   button {
+  padding: 17px;
+  border: none;
+  color: white;
+  background: blue;
+  cursor: pointer;
+  position: absolute;
+  right:156px;
+  top:260px;
   }
-  a {
-  color: grey;
-  &:hover {
-    color: black;
+  button:hover {
+    background: #27394e;
+    transition: background 0.5s ease-in-out;
   }
- }
 }
+
+
+  /* second page - answer*/
 
 .banner {
   padding: 5px;
@@ -69,9 +88,6 @@ a {
   }
   p{
   font-size: var(--text);
-  }
-  button{
-    color:blue;
   }
 }
 
