@@ -7,8 +7,8 @@ $silver: #c0c0c0;
 $brown:#a0522d;
 
 body {
-  margin: 5rem;
-  padding: 5rem;
+  margin: 2rem;
+  padding: 2rem;
   box-sizing: border-box;
   background: $gray;
 
@@ -62,32 +62,58 @@ a {
   input{
     padding: 11px;
     margin: -2px;
-    width: 150%;
+    width: 45%;
     height: 22px;
-  }
-  input button{
+    position: fixed;
+    top: 261px;
+    left: 30%;
+    flex-direction: column;
+    align-items: center;
   }
   button {
-    padding: 17px;
+    padding: 16px;
     border: none;
     color: white;
     background: blue;
     cursor: pointer;
     position: absolute;
-    right:-143px;
-    top:-1px;
+    right: -111px;
+    top: -1px;
   }
   button:hover {
     background: #27394e;
     transition: background 0.5s ease-in-out;
   }
-}
-
+  }
   form{
     position: absolute;
     right:350px;
     top:260px;
   }
+  @media screen and (max-width: 580px) {
+  .button {
+    padding: 16px;
+    border: none;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    position: absolute;
+    right: -125px;
+    top: -1px;
+  }
+  .input{
+    padding: 11px;
+    margin: -2px;
+    width: 37%;
+    height: 22px;
+    position: fixed;
+    top: 261px;
+    left: 30%;
+    flex-direction: column;
+    align-items: center;
+  }
+  }
+
   /* second page - answer*/
 
 .banner {
